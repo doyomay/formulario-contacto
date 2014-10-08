@@ -29,7 +29,7 @@ $(function(){
 	            // callback handler that will be called on success
 		        request.done(function (response, textStatus, jqXHR) {
 		        	$(".Formulario").addClass("zoomOutRight");
-		            $("#mensaje_Enviado").css("display","block");	
+		            $("#mensaje_Enviado").addClass('u-db animated fadeInDown');	
 		        });
 		        // callback handler that will be called on failure
 		        request.fail(function (jqXHR, textStatus, errorThrown) {
