@@ -28,7 +28,7 @@ $(function(){
 		        });
 	            // callback handler that will be called on success
 		        request.done(function (response, textStatus, jqXHR) {
-		            $(".Formulario").slideUp(200);
+		        	$(".Formulario").addClass("zoomOutRight");
 		            $("#mensaje_Enviado").css("display","block");	
 		        });
 		        // callback handler that will be called on failure
