@@ -9,7 +9,9 @@
 	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<h1 class="titulo">Contacto</h1>
+	<header>
+		<h1 class="titulo">Contacto</h1>
+	</header>
 	<form action="" class="Formulario animated zoomInLeft">
 		<div class="Formulario-celda">
 			<label for="nombre" class="Formulario-celda-label u-requerido">Nombre: </label>
@@ -25,18 +27,21 @@
 		</div>
 		<div class="Formulario-celda">
 			<label for="sexo" class="Formulario-celda-label">Sexo: </label>
-			<input name="sexo" type="radio" value="Masculino" class="Formulario-celda-radio"required> Masculino
-			<input name="sexo" type="radio" Value="Femenino" class="Formulario-celda-radio" required> Femenino
+			<input id="sexo" name="sexo" type="radio" value="Masculino" class="Formulario-celda-radio"> Masculino
+			<input id="sexo" name="sexo" type="radio" Value="Femenino" class="Formulario-celda-radio"> Femenino
 		</div>
 		<div class="Formulario-celda">
 			<label for="ciudad" class="Formulario-celda-label">Ciudad: </label>
 			<select name="ciudad" id="ciudad" class="Formulario-celda-select">
+				<option value="">Ciudad ...</option>
 				<option value="cancun" required>Cancún</option>
 				<option value="escarsega" required>Escarsega</option>
 				<option value="campeche" required>Campeche</option>
 			</select>
 		</div>
-		<input type="submit" value="Enviar" class="u-btn">
+		<input id="enviar" type="submit" value="Enviar" class="u-btn">
 	</form>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
