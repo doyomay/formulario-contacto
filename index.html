@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Contacto</title>
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<h1 class="titulo">Contacto</h1>
+	<form action="" class="Formulario animated zoomInLeft">
+		<div class="Formulario-celda">
+			<label for="nombre" class="Formulario-celda-label u-requerido">Nombre: </label>
+			<input type="text" id="nombre" name="nombre" class="Formulario-celda-input " required>		
+		</div>
+		<div class="Formulario-celda">
+			<label for="email" class="Formulario-celda-label u-requerido">Email: </label>
+			<input type="email" id="email" name="email" class="Formulario-celda-input " required>			
+		</div>
+		<div class="Formulario-celda">
+			<label for="telefono" class="Formulario-celda-label">Teléfono: </label>
+			<input type="tel" id="telefono" name="telefono"class="Formulario-celda-input " required>			
+		</div>
+		<div class="Formulario-celda">
+			<label for="sexo" class="Formulario-celda-label">Sexo: </label>
+			<input name="sexo" type="radio" value="Masculino" class="Formulario-celda-radio"required> Masculino
+			<input name="sexo" type="radio" Value="Femenino" class="Formulario-celda-radio" required> Femenino
+		</div>
+		<div class="Formulario-celda">
+			<label for="ciudad" class="Formulario-celda-label">Ciudad: </label>
+			<select name="ciudad" id="ciudad" class="Formulario-celda-select">
+				<option value="cancun" required>Cancún</option>
+				<option value="escarsega" required>Escarsega</option>
+				<option value="campeche" required>Campeche</option>
+			</select>
+		</div>
+		<input type="submit" value="Enviar" class="u-btn">
+	</form>
+</body>
+</html>
